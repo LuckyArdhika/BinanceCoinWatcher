@@ -20,12 +20,13 @@
 </head>
 
 <body>
+  <noscript>Situs ini memerlukan Javascript</noscript>
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand">BICOWATCH</a>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" id="search" placeholder="Search Coin/Pair" oninput="this.value = this.value.toUpperCase()" aria-label="Search">
+        <button class="btn btn-outline-success" type="button" onclick="filterPair()">Search</button>
       </form>
     </div>
   </nav>
